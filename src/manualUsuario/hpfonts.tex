@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{fontspec}
+\usepackage{hpprime}
+\usepackage{booktabs}
+\usepackage{verbdef}
+
+\verbdef{\venter}{\hpE}
+\verbdef{\vENTER}{\hpENTER}
+\verbdef{\vup}{\hpup}
+\verbdef{\vdown}{\hpdown}
+
+\begin{document}
+
+\section*{Installation and Usage}
+
+Install the HP Prime font using the {\tt HPPrime.ttf} file.
+Then use the following template and table of macros below
+to create your document.
+
+\begin{quote}
+\begin{verbatim}
+\documentclass{article}
+\usepackage{fontspec,hpprime}
+
+\begin{document}
+   ...
+\end{document}
+\end{verbatim}
+\end{quote}
+
+\section*{HP Prime Keys}
+\begin{center}
+
+\begin{tabular}{|c|c|c|c|c|c|} \hline
+& &  \multicolumn{2}{c|}{}  & & \\
+\hpapps     & \hpsymb     & \multicolumn{2}{c|}{\hpup} &
+\hphelp     & \hpesc \\
+\verb!\hpapps! & \verb!\hpsymb! & \multicolumn{2}{c|}{\vup} &
+\verb!\hphelp! & \verb!\hpesc! \\ \hline
+& & & & & \\
+            & \hpplot     & \hpleft     &
+\hpright    & \hpview     & \\
+            & \verb!\hpplot! & \verb!\hpleft! &
+\verb!\hpright! & \verb!\hpview!  & \\ \hline
+& &  \multicolumn{2}{c|}{}  & & \\
+\hphome     & \hpnum     & \multicolumn{2}{c|}{\hpdown} &
+\hpmenu     & \hpcas \\
+\verb!\hpright! & \verb!\hpnum! & \multicolumn{2}{c|}{\vdown} &
+\verb!\hpmenu! & \verb!\hpcas! \\ \hline
+& & & & & \\
+\hpa        & \hpb        & \hpc        &
+\hpd        & \hpe        & \hpdel      \\
+\verb!\hpvars! & \verb!\hptool! & \verb!\hpmath! &
+\verb!\hpxttn! & \verb!\hpabc! &   \\ 
+\verb!\hpa! & \verb!\hpb! & \verb!\hpc! &
+\verb!\hpd! & \verb!\hpe! & \verb!\hpdel! \\ \hline
+& & & & & \\
+\hpf        & \hpg        & \hph        &
+\hpi        & \hpj        & \hpk        \\
+\verb!\hpxtoy! & \verb!\hpsin! & \verb!\hpcos! &
+\verb!\hptan! & \verb!\hpln! & \verb!\hplog! \\
+\verb!\hpf! & \verb!\hpg! & \verb!\hph! &
+\verb!\hpi! & \verb!\hpj! & \verb!\hpk! \\ \hline 
+& & & & \multicolumn{2}{c|}{}  \\
+\hpl        & \hpm        & \hpn        &
+\hpo        & \multicolumn{2}{c|}{\hpE}   \\
+\verb!\hpxsq! & \verb!\hpneg! & \verb!\hppar! &
+\verb!\hpcomma! & \multicolumn{2}{c|}{\vENTER} \\ 
+\verb!\hpl! & \verb!\hpm! & \verb!\hpn! &
+\verb!\hpo! & \multicolumn{2}{c|}{\venter} \\ \hline
+\end{tabular}
+
+\bigskip
+
+\begin{tabular}{|c|c|c|c|c|} \hline
+& & & & \\
+\hpeex      & \hpseven    & \hpeight    &
+\hpnine     & \hpdiv      \\
+\verb!\hpeex!  & \verb!\hpseven! & \verb!\hpeight! &
+\verb!\hpnine! & \verb!\hpdiv!      \\ 
+\verb!\hpp!  & \verb!\hpq! & \verb!\hpr! &
+\verb!\hps! & \verb!\hpt!      \\ \hline
+& & & & \\
+\hpA        & \hpfour     & \hpfive    &
+\hpsix      & \hptimes      \\
+\verb!\hpalpha! & \verb!\]hpfour! & \verb!\hpfive! &
+\verb!\hpsix! & \verb!\hptimes!      \\ 
+\verb!\hpA! & \verb!\hpu! & \verb!\hpv! &
+\verb!\hpw! & \verb!\hpx!      \\ \hline
+& & & & \\
+\hpS        & \hpone    & \hptwo    &
+\hpthree     & \hpsub      \\
+\verb!\hpshift!  & \verb!\hpone! & \verb!\hptwo! &
+\verb!\hpthree! & \verb!\hpsub!      \\ 
+\verb!\hpS!  & \verb!\hpy! & \verb!\hpz! &
+\verb!\hppi! & \verb!\hpminus!      \\ \hline
+& & & & \\
+\hpon      & \hpzero    & \hpdot    &
+\hpspc     & \hpplus      \\
+\verb!\hpON!  & \verb!\hpzero! & \verb!\hpdot! &
+\verb!\hpspc! & \verb!\hpplus!      \\ 
+\verb!\hpon!  &  & \verb!\hpeq! &
+ &       \\ \hline
+\end{tabular}
+
+
+\end{center}
+
+\end{document}
